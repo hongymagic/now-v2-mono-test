@@ -3,11 +3,13 @@
   "name": "now-v2-mono-test",
   "builds": [
     { "src": "api/**/*.js", "use": "@now/node" },
-    { "src": "with-typescript/package.json", "use": "@now/next" }
+    { "src": "with-typescript/package.json", "use": "@now/next" },
+    { "src": "with-styled-components/package.json", "use": "@now/next" }
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/with-typescript/(.*)", "dest": "/with-typescript/$1" }
+    { "src": "/with-typescript/(.*)", "dest": "/with-typescript/$1" },
+    { "src": "/with-styled-components/(.*)", "dest": "/with-styled-components/$1" }
   ],
   "regions": ["sfo1"]
 }
