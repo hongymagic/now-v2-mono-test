@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next/link';
 import Layout from '../components/Layout';
 
 export default () => (
@@ -6,4 +6,4 @@ export default () => (
     <h1>Hello Next.js 👋</h1>
     <p><Link href='/about'><a>About</a></Link></p>
   </Layout>
-)
+);

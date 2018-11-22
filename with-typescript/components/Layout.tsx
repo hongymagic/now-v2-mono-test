@@ -1,9 +1,9 @@
-import * as React from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
+import * as React from 'react';
+import Link from 'next/link';
+import Head from 'next/head';
 
 type Props = {
-  title?: string
+  title?: string;
 }
 
 const Layout: React.SFC<Props> = ({ children, title = 'This is the default title' }) => (
@@ -24,6 +24,6 @@ const Layout: React.SFC<Props> = ({ children, title = 'This is the default title
       I'm here to stay
     </footer>
   </div>
-)
+);
 
-export default Layout
+export default Layout;
